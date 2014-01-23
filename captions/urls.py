@@ -5,5 +5,7 @@ from captions import views
 
 urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
-    url(r'^(?P<youtube_id>[-\w]+)/$', views.youTubeID, name='youtube'),
+    url(r'^(?P<youtube_id>[-\w]+)/$', views.youTubeAmara, name='youtube'),
+    url(r'^(?P<youtube_id>[-\w]+)/amara/$', views.amara, name='youtube'),
+    url(r'^(?P<youtube_id>[-\w]+)/youtube/$', views.youTube, name='youtube'),
 )
